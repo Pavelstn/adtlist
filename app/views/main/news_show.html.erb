@@ -1,0 +1,10 @@
+ <% content_for :title, "Новости, Квартиры в Краснодаре, Сочи и крае, продажа квартир в Краснодаре, купить квартир" %>
+ <div class="row">
+ 	<div class="span12">
+	
+	<h2><%= @news_list.title %></h2>
+	<img src="<%= @news_list.img_url %>" class="news_list_img" align="left" > <%=raw @news_list.text %>
+	</div>
+</div>
+<hr>
+<%= render "shared/news_list" %>

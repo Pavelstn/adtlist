@@ -1,0 +1,124 @@
+<%# content_for :title, "Недвижимость "+@post.region.try(:name)+": "+@post.title %>
+<% content_for :title, "ADTlist- Квартиры в Краснодаре, Сочи и крае, продажа квартир в Краснодаре, купить квартир" %>
+<% content_for :header do %>
+ <h1>AdtList недвижимость юга</h1>
+<% end %>
+
+<%#= render "shared/region_menu" %>
+
+
+<%= render "shared/search_box" %>
+<div class="container" id="carousel_container">
+
+	<%#= render "shared/items_list2" %>
+<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+    	<ol class="carousel-indicators">
+    		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    		<li data-target="#myCarousel" data-slide-to="1"></li>
+    		<li data-target="#myCarousel" data-slide-to="2"></li>
+    		<li data-target="#myCarousel" data-slide-to="3"></li>
+    		<li data-target="#myCarousel" data-slide-to="4"></li>
+    		<li data-target="#myCarousel" data-slide-to="5"></li>
+    		<li data-target="#myCarousel" data-slide-to="2"></li>
+    		<li data-target="#myCarousel" data-slide-to="6"></li>
+    		
+  		</ol>
+
+
+
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/img/slider/slide_1.jpg" alt="">
+          <div class="slide_container">
+            <div class="carousel-caption">
+             
+              <p class="lead">Cras juultricies vehicula ut id elit.</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/slider/slide_2.jpg" alt="">
+          <div class="slide_container">
+            <div class="carousel-caption">
+              
+              <p class="lead">iicies vehicula ut id elit.</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/slider/slide_3.jpg" alt="">
+          <div class="slide_container">
+            <div class="carousel-caption">
+              <p class="lead">d dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/slider/slide_4.jpg" alt="">
+          <div class="slide_container">
+            <div class="carousel-caption">
+              <p class="lead">Did dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+          </div>
+        </div>  
+        <div class="item">
+          <img src="/img/slider/slide_5.jpg" alt="">
+          <div class="slide_container">
+            <div class="carousel-caption">
+              <p class="lead">id elit nibh ultricies vehicula ut id elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/slider/slide_6.jpg" alt="">
+          <div class="slide_container">
+            <div class="carousel-caption">
+              <p class="lead">Crasd lor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/slider/slide_7.jpg" alt="">
+          <div class="slide_container">
+            <div class="carousel-caption">
+              <p class="lead">Crasit non mi  ultricies vehicula ut id elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/img/slider/slide_8.jpg" alt="">
+          <div class="slide_container">
+            <div class="carousel-caption">
+              <p class="lead">Cras jus dolor id nibh ultrica ut id elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+    <div class="row">
+    	<div class="span12 " id="small_news">
+    		<div class="row  small_news_row">
+    			<% @news_lists.each do |news_list| %>
+    				<div class="span3 small_news_item" >
+    					<a href="/news/<%= news_list.id %>">
+    						<h5><%= news_list.title %></h5>
+      						<%= news_list.short_text %><br> Подробнее >>
+      					</a>
+    				</div>
+    			<% end %>
+    		</div>
+    		
+    	<div>
+
+    </div>
+
+
+</div> 

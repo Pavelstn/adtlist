@@ -1,0 +1,138 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+
+ body {
+ 	/*ding-top: 60px;*/
+ 	padding-bottom: 40px;
+ 	background-color: rgb(40, 60, 94) !important; 
+ 	color: rgb(255, 255, 255) !important; 
+
+ 	background: #283c5e url(/img/bg-tile.png) repeat-y center 0!important;
+
+
+ }
+ label{
+ 	color: rgb(255, 255, 255) !important;
+ }
+
+ #pagewrapper{
+ /*	width: 100% ;
+ 	 	background-image: url("/img/bg-gradient3.jpg");
+ 	background-origin: padding-box;
+background-size: auto;
+background-attachment: scroll;
+background-clip: border-box;
+*/
+width: 100%;
+margin-top: 0;
+padding-top: 0;
+background-color: rgb(40, 60, 94) !important; 
+background:  url(/img/bg-bluewhite.jpg) no-repeat center 130px!important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+a {
+	text-decoration: none !important;
+ 	color: rgb(255, 255, 255) !important;
+ }
+a:visited {
+    color: rgb(255, 255, 255) !important; 
+}
+a:hover {
+   color: rgb(248, 238, 178) !important;
+ 
+} 
+
+
+hr{
+	border: 1px dotted rgb(248, 238, 178);
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+h1,h2,h3,h5{
+	color: rgb(248, 238, 178);
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+}
+
+h4{
+	color: rgb(255, 255, 255);
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+}
+
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+
+.public_header{
+
+position: relative;
+}
+
+
+
+
+a.category_item {
+	color: rgb(248, 238, 178) !important;
+}
+.category_item:hover{
+	/*background-color: rgb(40, 60, 94) !important; */
+	background-color: rgba(255, 255, 255, 0.0980392) !important;
+	color: rgb(248, 238, 178);
+}
+
+
+
+.page_header{
+	text-align: center;
+	/*border-width: 0px;*/
+	/*background-color: red !important;*/
+	padding-bottom: 25px;
+}
+
+
+.container{
+	/*@extend .border_shadow;
+	@extend .border_radius;*/
+	
+}
+#main_container,.hero-unit{
+	padding-top: 7px;
+	background-color: rgb(3, 52, 82);
+	
+}
+
+.news_list_img{
+	/*height: 150px !important;*/
+	width: 250px !important;
+	margin-right: 7px;
+}
+
+
+
+
+
+
+.dropdown-menu{
+	background-color: rgb(3, 52, 82);
+}

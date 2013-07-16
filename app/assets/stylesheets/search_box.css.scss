@@ -1,0 +1,46 @@
+@import "shadow_and_round";
+#search_box{
+ // background-color: #2d6a99 !important;
+ background-color: rgba(3, 52, 82, 0.8) !important;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0px !important;
+  margin-bottom: 10px;
+
+  @extend .border_shadow;
+  @extend .border_radius;
+}
+
+
+.region_item{
+	font-size: 25px;
+	color: rgb(248, 238, 178);
+	/*font-style:  oblique; | inherit normal | italic |*/
+}
+.region_item:hover{
+	/*background-color: rgb(40, 60, 94) !important; */
+	background-color: rgba(255, 255, 255, 0.0980392) !important;
+	color: rgb(248, 238, 178);
+}
+
+.top_menu {
+    clear: both;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+ 
+.top_menu ul {
+    float: left;
+    left: 50%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+ 
+.top_menu ul li {
+    float: left;
+    position: relative;
+    right: 50%;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>adtlist Администрирование</title>
+  <%= render "shared/head" %> 
+  <%#= javascript_include_tag "ckeditor/ckeditor.js" %>
+</head>
+<body>
+  <% if user_signed_in? %>
+  <%= render "shared/header" %> 
+  <% end %>
+  <div id="pagewrapper"> 
+    <div class="container">
+      <%= render "shared/public_header" %>  
+    </div>   
+    <div class="container" id="main_container">
+      <%= yield %>
+    </div> 
+  </div>         
+  <footer>
+    <%#= render "shared/footer" %>
+  </footer>
+</body>
+</html>

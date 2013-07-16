@@ -1,0 +1,11 @@
+<% content_for :title, @post.region.try(:name)+" "+@post.title+" цена "+ @post.try(:price).to_s %>
+<%#= render "shared/region_menu" %>
+<%= render "shared/search_box" %>
+
+<div class="container" id="main_container">
+<div class="page_container" itemscope itemtype="http://schema.org/AggregateOffer">
+<%= render "shared/show_post" %>
+	<hr>
+	<%= render "shared/items_list2" %>
+</div>  <!-- page_container -->
+</div>

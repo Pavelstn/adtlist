@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%=h yield(:title) %></title>
+  <%= render "shared/head" %> 
+</head>
+<body>
+  <% if user_signed_in? %>
+  <%= render "shared/header" %> 
+  <% end %>
+  <div id="pagewrapper"> 
+    <div class="container">
+      <%= render "shared/public_header" %>  
+    </div>   
+    <%= render "shared/add_post_modal" %>  
+    <%= yield %>
+  </div>         
+  <footer>
+    <%= render "shared/footer" %>
+  </footer>
+</body>
+</html>

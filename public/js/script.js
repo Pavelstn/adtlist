@@ -1,0 +1,17 @@
+    $(function () {
+        $("body").css({padding:0, margin:0});
+        var f = function () {
+            $(".nail").css({position:"relative"});
+            var h1 = $("body").height();
+            var h2 = $(window).height();
+            var d = h2 - h1;
+            var h = $(".nail").height() + d;
+            var ruler = $("<div>").appendTo(".nail");
+            h = Math.max(ruler.position().top, h);
+            ruler.remove();
+            $(".nail").height(h);
+        };
+        setInterval(f, 1000);
+        $(window).resize(f);
+        f();
+    });

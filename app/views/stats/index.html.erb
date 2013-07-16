@@ -1,0 +1,32 @@
+<h1>Статистика</h1>
+<a href="/stats/destroy_all" class="btn btn-danger">Сбросить статистику!</a><br>
+Всего предложений <%=@all_post %><br> 
+Визитов всего <%=@sum %><br>
+<!--Кликов всего <%#=@click %><br> -->
+
+<hr>
+
+
+<table>
+<tr>
+  <th>Город</th>
+  <th>Заголовок</th>
+  <th>Стоимость</th>
+  <th>Визитов</th>
+</tr>
+
+  <% @stats.each do |stat| %>
+<tr>
+  <td><%=stat.post.region.try(:name)%></td>
+<td><%=stat.post.try(:title)%> <%= link_to 'Show', stat.post %> </td>
+<td><%=stat.post.try(:price)%></td>
+ <td><%= stat.visit %></td>
+
+
+</tr>
+
+<% end %>
+
+</table>
+
+

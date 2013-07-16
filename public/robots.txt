@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /users/sign_in
+Disallow: /users/sign_up
+Disallow: /users/password/new
+Disallow: /posts
+Disallow: /posts/new
+Disallow: /stats
+Host: adtlist.ru

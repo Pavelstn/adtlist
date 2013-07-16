@@ -1,0 +1,13 @@
+<%# content_for :title, "Недвижимость "+@post.region.try(:name)+": "+@post.title %>
+<% content_for :title, "ADTlist- Квартиры в Краснодаре, Сочи и крае, продажа квартир в Краснодаре, купить квартир" %>
+<% content_for :header do %>
+ <h1>AdtList недвижимость юга</h1>
+<% end %>
+<%#= render "shared/subscribe" %>
+<%#= render "shared/region_menu" %>
+<%= render "shared/search_box" %>
+
+<div class="container" id="main_container">
+
+	<%= render "shared/items_list2" %>
+</div> 
