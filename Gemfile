@@ -49,5 +49,5 @@ gem 'rqrcode'
 
 #gem 'adtadmin', :path => "/home/pavel/WORK/adtadmin"
 #gem 'usermanage', :path => "/home/pavel/WORK/usermanage"
-#gem 'usermanage', :git => "git@bitbucket.org:pavelstn/usermanage.git"
-#gem 'adtadmin', :git => "git@bitbucket.org:pavelstn/adtadmin.git"
+gem 'usermanage', :git => "git@github.com:Pavelstn/usermanage.git"
+gem 'adtadmin', :git => "git@github.com:Pavelstn/adtadmin.git"
